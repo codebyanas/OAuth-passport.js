@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">OAuth Dashboard</h1>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto my-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Sidebar -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+                <h2 class="text-xl font-bold mb-4">Navigation</h2>
+                <ul class="space-y-2">
+                    <li><a href="/" class="text-blue-600 hover:underline">Home</a></li>
+                    <li><a href="/profile" class="text-blue-600 hover:underline">Profile</a></li>
+                </ul>
+            </div>
+
+            <!-- Dashboard Content -->
+            <div class="col-span-2 bg-white shadow-md rounded-lg p-6">
+                <h2 class="text-2xl font-bold mb-4">Welcome to the OAuth Dashboard</h2>
+                <p class="text-gray-700 mb-6">Use the links below to log in with your preferred method:</p>
+
+                <div class="space-y-4">
+                    <a href="/auth/google"
+                        class="bg-gray-700 text-white px-6 py-3 rounded-lg inline-flex items-center space-x-2 hover:bg-gray-600">
+                        <img src="https://i.postimg.cc/Vv6BBNN2/google.png" alt="Google Logo"
+                            class="w-5 h-5 rounded-full">
+                        <span>Login with Google</span>
+                    </a>
+
+                    <a href="/auth/facebook"
+                        class="bg-gray-700 text-white px-6 py-3 rounded-lg inline-flex items-center space-x-2 hover:bg-gray-600">
+                        <img src="https://i.postimg.cc/Wb07vzy6/facebook-removebg-preview.png" alt="Google Logo"
+                            class="w-5 h-5 rounded-full">
+                        <span>Login with Facebook</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
